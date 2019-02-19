@@ -378,6 +378,12 @@ public class ExaminePlugin extends Plugin
 						.append(ChatColorType.NORMAL)
 						.append("ea)");
 				}
+
+				message
+						.append(ChatColorType.NORMAL)
+						.append(" itemId: ")
+						.append(ChatColorType.HIGHLIGHT)
+						.append(StackFormatter.formatNumber(id));
 			}
 
 			chatMessageManager.queue(QueuedMessage.builder()
