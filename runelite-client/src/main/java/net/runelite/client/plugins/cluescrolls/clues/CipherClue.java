@@ -44,7 +44,7 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 {
 	private static final Set<CipherClue> CLUES = ImmutableSet.of(
 		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399", "House redirect Pollivneach OR Jewelry Box - Al Kharid -> Carpet ride"),
-		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", null),
+		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", "Fairy Ring - CKS"),
 		new CipherClue("ZCZL", "Adam", new WorldPoint(3227, 3227, 0), "Outside Lumbridge castle", "666", "Lumbridge"),
 		new CipherClue("ZHLUG ROG PDQ", "Weird Old Man", new WorldPoint(3224, 3112, 0), "Kalphite Lair entrance. Fairy ring BIQ", "150", null),
 		new CipherClue("ECRVCKP MJCNGF", "Captain Khaled", new WorldPoint(1845, 3754, 0), "Large eastern building in Piscarilius House", "5", "Kahredst's memoirs - 2 - Piscarilius"),

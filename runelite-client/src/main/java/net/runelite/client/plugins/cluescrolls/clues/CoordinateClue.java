@@ -50,11 +50,17 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private static final ItemRequirement HAS_SPADE = new SingleItemRequirement(ItemID.SPADE);
 	private static final ItemRequirement CLUE1 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12037);
 	private static final ItemRequirement CLUE2 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12041);
-	private static final ItemRequirement CLUE3 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2809);
+	private static final ItemRequirement CLUE3 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3592);
 	private static final ItemRequirement CLUE4 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12045);
 	private static final ItemRequirement CLUE5 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7309);
 	private static final ItemRequirement CLUE6 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7311);
 	private static final ItemRequirement CLUE7 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3584);
+	private static final ItemRequirement CLUE8 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7305);
+	private static final ItemRequirement CLUE9 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM);
+	private static final ItemRequirement CLUE10 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2821);
+	private static final ItemRequirement CLUE11 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2815);
+	private static final ItemRequirement CLUE12 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2807);
+	private static final ItemRequirement CLUE13 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3582);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
@@ -81,7 +87,7 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - BKP").build());
 			}
-			if (CLUE3.fulfilledBy(plugin.getInventoryItems()))
+			if (CLUE3.fulfilledBy(plugin.getInventoryItems()) || CLUE4.fulfilledBy(plugin.getInventoryItems()))
 			{
 				panelComponent.getChildren().add(LineComponent.builder().build());
 				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
@@ -108,6 +114,48 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - BIP").build());
+			}
+			if (CLUE8.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - J - Miscellania").build());
+			}
+			if (CLUE9.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - P - Dranor Village").build());
+			}
+			if (CLUE10.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Portal Nexus - 3 - Falador").build());
+			}
+			if (CLUE11.fulfilledBy(plugin.getInventoryItems()))
+		{
+			panelComponent.getChildren().add(LineComponent.builder().build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+					.left("Fairy Ring - BLP - Tzhaar Area -> Exit N -> N past Elvarg").build());
+		}
+			if (CLUE12.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Necklace of Passage - 2 - The Outpost").build());
+			}
+			if (CLUE13.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Slayer Ring - 2 - Morytania Slayer Tower").build());
 			}
 
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))
