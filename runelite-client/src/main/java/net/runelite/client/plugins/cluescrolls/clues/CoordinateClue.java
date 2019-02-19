@@ -39,6 +39,8 @@ import net.runelite.client.ui.overlay.components.LineComponent;
 import net.runelite.client.ui.overlay.components.PanelComponent;
 import net.runelite.client.ui.overlay.components.TitleComponent;
 
+import static net.runelite.client.plugins.cluescrolls.ClueScrollOverlay.TITLED_CONTENT_COLOR;
+
 @Getter
 @AllArgsConstructor
 public class CoordinateClue extends ClueScroll implements TextClueScroll, LocationClueScroll
@@ -46,6 +48,13 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private String text;
 	private WorldPoint location;
 	private static final ItemRequirement HAS_SPADE = new SingleItemRequirement(ItemID.SPADE);
+	private static final ItemRequirement CLUE1 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12037);
+	private static final ItemRequirement CLUE2 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12041);
+	private static final ItemRequirement CLUE3 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2809);
+	private static final ItemRequirement CLUE4 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12045);
+	private static final ItemRequirement CLUE5 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7309);
+	private static final ItemRequirement CLUE6 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7311);
+	private static final ItemRequirement CLUE7 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3584);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
@@ -58,6 +67,49 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 
 		if (plugin.getInventoryItems() != null)
 		{
+			if (CLUE1.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fenkenstrain's Castle").build());
+			}
+			if (CLUE2.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - BKP").build());
+			}
+			if (CLUE3.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Slayer Ring - 1 - Gnome Stronghold -> West ").build());
+			}
+			if (CLUE5.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - DKP").build());
+			}
+			if (CLUE6.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - B - Monastery").build());
+			}
+			if (CLUE7.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - BIP").build());
+			}
+
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))
 			{
 				panelComponent.getChildren().add(LineComponent.builder().left("").build());

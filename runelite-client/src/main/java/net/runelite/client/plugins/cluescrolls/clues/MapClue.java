@@ -40,6 +40,8 @@ import net.runelite.api.TileObject;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.plugins.cluescrolls.ClueScrollPlugin;
+
+import static net.runelite.client.plugins.cluescrolls.ClueScrollOverlay.TITLED_CONTENT_COLOR;
 import static net.runelite.client.plugins.cluescrolls.ClueScrollWorldOverlay.CLICKBOX_BORDER_COLOR;
 import static net.runelite.client.plugins.cluescrolls.ClueScrollWorldOverlay.CLICKBOX_FILL_COLOR;
 import static net.runelite.client.plugins.cluescrolls.ClueScrollWorldOverlay.CLICKBOX_HOVER_BORDER_COLOR;
@@ -62,17 +64,17 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 		new MapClue(CLUE_SCROLL_EASY_3516, new WorldPoint(2612, 3482, 0)),
 		new MapClue(CLUE_SCROLL_EASY_3518, new WorldPoint(3110, 3152, 0)),
 		new MapClue(CLUE_SCROLL_EASY_7236, new WorldPoint(2970, 3415, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_2827, new WorldPoint(3091, 3227, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_3596, new WorldPoint(2907, 3295, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_3598, new WorldPoint(2658, 3488, 0), CRATE_357),
-		new MapClue(CLUE_SCROLL_MEDIUM_3599, new WorldPoint(2651, 3231, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_3601, new WorldPoint(2565, 3248, 0), CRATE_354),
-		new MapClue(CLUE_SCROLL_MEDIUM_3602, new WorldPoint(2924, 3210, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_7286, new WorldPoint(2536, 3865, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_7292, new WorldPoint(2578, 3597, 0)),
-		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0)),
+		new MapClue(CLUE_SCROLL_MEDIUM_2827, new WorldPoint(3091, 3227, 0),null,"Jewelry Box - P - Dranor Village"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3596, new WorldPoint(2907, 3295, 0),null,"Outside house OR Skills neck - Crafting Guild"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3598, new WorldPoint(2658, 3488, 0), CRATE_357,null,"Fairy Ring - ALS"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3599, new WorldPoint(2651, 3231, 0),null,"Fairy Ring - DJP OR Ardy Cloak Monastery"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3601, new WorldPoint(2565, 3248, 0), CRATE_354,null,"Ardy Cloak - Monastery"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3602, new WorldPoint(2924, 3210, 0),null,"tele here6"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7286, new WorldPoint(2536, 3865, 0),null,"Jewelry Box - J - Miscellania"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0),null,"tele here8"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0),null,"Sprit Tree - Khazard Battlefield (3) -> West"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7292, new WorldPoint(2578, 3597, 0),null,"Fairy Ring - ALP"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0),null,"Portal Nexus - 9 - Seer's Village -> North"),
 		new MapClue(CLUE_SCROLL_HARD, new WorldPoint(3309, 3503, 0), CRATE_2620),
 		new MapClue(CLUE_SCROLL_HARD_2729, new WorldPoint(3190, 3963, 0)),
 		new MapClue(CLUE_SCROLL_HARD_3520, new WorldPoint(2615, 3078, 0)),
@@ -82,7 +84,7 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 		new MapClue(CLUE_SCROLL_HARD_7239, new WorldPoint(3021, 3912, 0)),
 		new MapClue(CLUE_SCROLL_HARD_7241, new WorldPoint(2722, 3338, 0)),
 		new MapClue(CLUE_SCROLL_ELITE_12130, new WorldPoint(2449, 3130, 0)),
-		new MapClue(CLUE_SCROLL_ELITE_19782, new WorldPoint(2953, 9523, 1), "In the Mogre Camp, near Port Khazard. You require a Diving Apparatus and a Fishbowl Helmet"),
+		new MapClue(CLUE_SCROLL_ELITE_19782, new WorldPoint(2953, 9523, 1), "In the Mogre Camp, near Port Khazard. You require a Diving Apparatus and a Fishbowl Helmet", null),
 		new MapClue(CLUE_SCROLL_ELITE_19783, new WorldPoint(2202, 3062, 0)),
 		new MapClue(CLUE_SCROLL_ELITE_19784, new WorldPoint(1815, 3852, 0)),
 		new MapClue(CLUE_SCROLL_ELITE_19785, new WorldPoint(3538, 3208, 0)),
@@ -95,6 +97,7 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 	private final WorldPoint location;
 	private final int objectId;
 	private final String description;
+	private final String teleport;
 
 	private MapClue(int itemId, WorldPoint location)
 	{
@@ -103,20 +106,21 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 
 	private MapClue(int itemId, WorldPoint location, int objectId)
 	{
-		this(itemId, location, objectId, null);
+		this(itemId, location, objectId, null, null);
 	}
 
-	private MapClue(int itemId, WorldPoint location, String description)
+	private MapClue(int itemId, WorldPoint location, String description, String teleport)
 	{
-		this(itemId, location, -1, description);
+		this(itemId, location, -1, description, teleport);
 	}
 
-	private MapClue(int itemId, WorldPoint location, int objectId, String description)
+	private MapClue(int itemId, WorldPoint location, int objectId, String description, String teleport)
 	{
 		this.itemId = itemId;
 		this.location = location;
 		this.objectId = objectId;
 		this.description = description;
+		this.teleport = teleport;
 	}
 
 	@Override
@@ -156,6 +160,16 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 			panelComponent.getChildren().add(LineComponent.builder()
 				.left(description)
 				.build());
+		}
+
+		if (teleport != null)
+		{
+			panelComponent.getChildren().add(LineComponent.builder().build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+					.leftColor(TITLED_CONTENT_COLOR)
+					.left(teleport)
+					.build());
 		}
 
 		if (objectId == -1 && plugin.getInventoryItems() != null)

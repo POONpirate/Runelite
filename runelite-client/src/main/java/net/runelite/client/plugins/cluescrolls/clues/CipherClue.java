@@ -43,19 +43,19 @@ import net.runelite.client.ui.overlay.components.TitleComponent;
 public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScroll, LocationClueScroll
 {
 	private static final Set<CipherClue> CLUES = ImmutableSet.of(
-		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399"),
-		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7"),
-		new CipherClue("ZCZL", "Adam", new WorldPoint(3227, 3227, 0), "Outside Lumbridge castle", "666"),
-		new CipherClue("ZHLUG ROG PDQ", "Weird Old Man", new WorldPoint(3224, 3112, 0), "Kalphite Lair entrance. Fairy ring BIQ", "150"),
-		new CipherClue("ECRVCKP MJCNGF", "Captain Khaled", new WorldPoint(1845, 3754, 0), "Large eastern building in Piscarilius House", "5"),
-		new CipherClue("OVEXON", "Eluned", new WorldPoint(2289, 3144, 0), "Outside Lletya", "53,000"),
-		new CipherClue("VTYR APCNTGLW", "King Percival", new WorldPoint(2634, 4682, 1), "Fisher Realm, first floor. Fairy ring BJR", "5"),
-		new CipherClue("UZZU MUJHRKYYKJ", "Otto Godblessed", new WorldPoint(2501, 3487, 0), "Otto's Grotto", "3"),
-		new CipherClue("USBJCPSO", "Traiborn", new WorldPoint(3112, 3162, 0), "First floor of Wizards Tower", "3150"),
-		new CipherClue("HCKTA IQFHCVJGT", "Fairy Godfather", new WorldPoint(2446, 4428, 0), "Zanaris throne room", "64"),
-		new CipherClue("ZSBKDO ZODO", "Pirate Pete", new WorldPoint(3680, 3537, 0), "Dock northeast of the Ectofunctus", "Puzzle"),
-		new CipherClue("GBJSZ RVFFO", "Fairy Queen", new WorldPoint(2347, 4435, 0), "Fairy Resistance Hideout", "Puzzle"),
-		new CipherClue("QSPGFTTPS HSBDLMFCPOF", "Professor Gracklebone", new WorldPoint(1625, 3802, 0), "Ground floor of Arceuus House Library", "9")
+		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399", "House redirect Pollivneach OR Jewelry Box - Al Kharid -> Carpet ride"),
+		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", null),
+		new CipherClue("ZCZL", "Adam", new WorldPoint(3227, 3227, 0), "Outside Lumbridge castle", "666", "Lumbridge"),
+		new CipherClue("ZHLUG ROG PDQ", "Weird Old Man", new WorldPoint(3224, 3112, 0), "Kalphite Lair entrance. Fairy ring BIQ", "150", null),
+		new CipherClue("ECRVCKP MJCNGF", "Captain Khaled", new WorldPoint(1845, 3754, 0), "Large eastern building in Piscarilius House", "5", "Kahredst's memoirs - 2 - Piscarilius"),
+		new CipherClue("OVEXON", "Eluned", new WorldPoint(2289, 3144, 0), "Outside Lletya", "53,000", null),
+		new CipherClue("VTYR APCNTGLW", "King Percival", new WorldPoint(2634, 4682, 1), "Fisher Realm, first floor. Fairy ring BJR", "5", null),
+		new CipherClue("UZZU MUJHRKYYKJ", "Otto Godblessed", new WorldPoint(2501, 3487, 0), "Otto's Grotto", "3", null),
+		new CipherClue("USBJCPSO", "Traiborn", new WorldPoint(3112, 3162, 0), "First floor of Wizards Tower", "3150", "Fairy Ring - DIS"),
+		new CipherClue("HCKTA IQFHCVJGT", "Fairy Godfather", new WorldPoint(2446, 4428, 0), "Zanaris throne room", "64", null),
+		new CipherClue("ZSBKDO ZODO", "Pirate Pete", new WorldPoint(3680, 3537, 0), "Dock northeast of the Ectofunctus", "Puzzle", null),
+		new CipherClue("GBJSZ RVFFO", "Fairy Queen", new WorldPoint(2347, 4435, 0), "Fairy Resistance Hideout", "Puzzle", null),
+		new CipherClue("QSPGFTTPS HSBDLMFCPOF", "Professor Gracklebone", new WorldPoint(1625, 3802, 0), "Ground floor of Arceuus House Library", "9", "Fairy Ring - CIS")
 	);
 
 	private String text;
@@ -63,14 +63,16 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 	private WorldPoint location;
 	private String area;
 	private String answer;
+	private String teleport;
 
-	private CipherClue(String text, String npc, WorldPoint location, String area, String answer)
+	private CipherClue(String text, String npc, WorldPoint location, String area, String answer, String teleport)
 	{
 		this.text = "The cipher reveals who to speak to next: " + text;
 		this.npc = npc;
 		this.location = location;
 		this.area = area;
 		this.answer = answer;
+		this.teleport = teleport;
 	}
 
 	@Override
@@ -96,6 +98,15 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 				.left(getAnswer())
 				.leftColor(TITLED_CONTENT_COLOR)
 				.build());
+		}
+
+		if (teleport != null)
+		{
+			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+					.leftColor(TITLED_CONTENT_COLOR)
+					.left(teleport)
+					.build());
 		}
 	}
 
