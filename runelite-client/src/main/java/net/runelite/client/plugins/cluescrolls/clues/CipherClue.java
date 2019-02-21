@@ -43,7 +43,7 @@ import net.runelite.client.ui.overlay.components.TitleComponent;
 public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScroll, LocationClueScroll
 {
 	private static final Set<CipherClue> CLUES = ImmutableSet.of(
-		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399", "House redirect Pollivneach OR Jewelry Box - Al Kharid -> Carpet ride"),
+		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399", "House redirect Pollnivneach OR Fairy Ring - BIQ -> Carpet ride"), //Kelton Desert Amulet - Nardah
 		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", "Fairy Ring - CKS"),
 		new CipherClue("ZCZL", "Adam", new WorldPoint(3227, 3227, 0), "Outside Lumbridge castle", "666", "Lumbridge"),
 		new CipherClue("ZHLUG ROG PDQ", "Weird Old Man", new WorldPoint(3224, 3112, 0), "Kalphite Lair entrance. Fairy ring BIQ", "150", null),

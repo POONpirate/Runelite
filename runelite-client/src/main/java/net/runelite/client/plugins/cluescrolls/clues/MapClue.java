@@ -69,9 +69,9 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 		new MapClue(CLUE_SCROLL_MEDIUM_3598, new WorldPoint(2658, 3488, 0), CRATE_357,null,"Fairy Ring - ALS"),
 		new MapClue(CLUE_SCROLL_MEDIUM_3599, new WorldPoint(2651, 3231, 0),null,"Fairy Ring - DJP OR Ardy Cloak Monastery"),
 		new MapClue(CLUE_SCROLL_MEDIUM_3601, new WorldPoint(2565, 3248, 0), CRATE_354,null,"Ardy Cloak - Monastery"),
-		new MapClue(CLUE_SCROLL_MEDIUM_3602, new WorldPoint(2924, 3210, 0),null,"tele here6"),
+		new MapClue(CLUE_SCROLL_MEDIUM_3602, new WorldPoint(2924, 3210, 0),null,"Jewelry Box - F - Crafting Guild -> South"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7286, new WorldPoint(2536, 3865, 0),null,"Jewelry Box - J - Miscellania"),
-		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0),null,"tele here8"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0),null,"Fairy Ring - BIP"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0),null,"Sprit Tree - Khazard Battlefield (3) -> West"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7292, new WorldPoint(2578, 3597, 0),null,"Fairy Ring - ALP -> SE"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0),null,"Portal Nexus - 9 - Seer's Village -> North"),
@@ -164,7 +164,6 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 
 		if (teleport != null)
 		{
-			panelComponent.getChildren().add(LineComponent.builder().build());
 			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
