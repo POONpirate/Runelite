@@ -71,6 +71,7 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private static final ItemRequirement CLUE21 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2819);
 	private static final ItemRequirement CLUE22 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2817);
 	private static final ItemRequirement CLUE23 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2809);
+	private static final ItemRequirement CLUE24 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2823);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
@@ -214,6 +215,12 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Spirit tree - 1 - Tree Gnome Village").build());
+			}
+			if (CLUE24.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Lumbridge Graveyard").build());
 			}
 
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))
