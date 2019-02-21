@@ -124,7 +124,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("PEATY PERT", "Party Pete", new WorldPoint(3047, 3376, 0), "Falador Party Room", "Jewelry Box - L - Falador Park"),
 		new AnagramClue("PROFS LOSE WRONG PIE", "Professor Onglewip", new WorldPoint(3113, 3162, 0), "Ground floor of Wizards Tower", null),
 		new AnagramClue("QUIT HORRIBLE TYRANT", "Brother Tranquility", new WorldPoint(3681, 2963, 0), "Mos Le'Harmless or Harmony Island", "7", null),
-		new AnagramClue("QUE SIR", "Squire", new WorldPoint(2975, 3343, 0), "Falador Castle Courtyard", "654", null),
+		new AnagramClue("QUE SIR", "Squire", new WorldPoint(2975, 3343, 0), "Falador Castle Courtyard", "654", "Portal Nexus - 3 - Falador"),
 		new AnagramClue("R AK MI", "Karim", new WorldPoint(3273, 3181, 0), "Al Kharid Kebab shop", "5", "Jewelry Box - Q - Al Kharid"),
 		new AnagramClue("RAT MAT WITHIN", "Martin Thwait", new WorldPoint(2906, 3537, 0), "Rogues' Den", "2", null),
 		new AnagramClue("RED ART TANS", "Trader Stan", new WorldPoint(3041, 3193, 0), "Port Sarim Charter ship", null),
