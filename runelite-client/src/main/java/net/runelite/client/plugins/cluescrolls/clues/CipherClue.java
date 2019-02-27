@@ -102,7 +102,7 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 
 		if (teleport != null)
 		{
-			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
 					.left(teleport)

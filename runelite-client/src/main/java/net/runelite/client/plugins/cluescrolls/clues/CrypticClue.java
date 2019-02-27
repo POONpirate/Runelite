@@ -121,7 +121,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("Mine was the strangest birth under the sun. I left the crimson sack, yet life had not begun. Entered the world, and yet was seen by none.", new WorldPoint(2832, 9586, 0), "Inside Karamja Volcano, dig directly underneath the Red spiders' eggs respawn.", null, null),
 		new CrypticClue("Search for a crate in Varrock Castle.", CRATE_5113, new WorldPoint(3224, 3492, 0), "Search the crate in the corner of the kitchen in Varrock Castle.", null, null),
 		new CrypticClue("And so on, and so on, and so on. Walking from the land of many unimportant things leads to a choice of paths.", new WorldPoint(2591, 3879, 0), "Dig on Etceteria next to the Evergreen tree in front of the castle walls.", null, null),
-		new CrypticClue("Speak to Donovan, the Family Handyman.", "Donovan the Family Handyman", new WorldPoint(2743, 3578, 0), "Donovan the Family Handyman is found on the first floor of Sinclair Mansion.", null, null),
+		new CrypticClue("Speak to Donovan, the Family Handyman.", "Donovan the Family Handyman", new WorldPoint(2743, 3578, 0), "Donovan the Family Handyman is found on the first floor of Sinclair Mansion.", "Fairy Ring - CJR", null),
 		new CrypticClue("Search the crates in the Barbarian Village helmet shop.", CRATES_11600, new WorldPoint(3073, 3430, 0), "Peksa's Helmet Shop in Barbarian Village.", null, null),
 		new CrypticClue("Search the boxes of Falador's general store.", CRATES_24088, new WorldPoint(2955, 3390, 0), "Falador general store.", null, null),
 		new CrypticClue("In a village made of bamboo, look for some crates under one of the houses.", CRATE_356, new WorldPoint(2800, 3074, 0), "Search the crate by the house at the northern point of the broken jungle fence in Tai Bwo Wannai.", "Fairy Ring - CKR", null),
@@ -249,7 +249,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("Search the drawers in a house in Draynor Village.", DRAWERS_350, new WorldPoint(3097, 3277, 0), "The drawer is located in the northernmost house in Draynor Village.", null, null),
 		new CrypticClue("Search the boxes in a shop in Taverley.", BOXES_360, new WorldPoint(2886, 3449, 0), "The box inside Gaius' Two Handed Shop.", null, null),
 		new CrypticClue("I lie beneath the first descent to the holy encampment.", new WorldPoint(2914, 5300, 1), "Dig immediately after climbing down the first set of rocks towards Saradomin's encampment within the God Wars Dungeon.", null, null),
-		new CrypticClue("Search the upstairs drawers of a house in a village where pirates are known to have a good time.", "Pirate", 348, new WorldPoint(2809, 3165, 1), "The house in the southeast corner of Brimhaven, northeast of Davon's Amulet Store. Kill any Pirate located around Brimhaven to obtain the key.", "House redirect -> Brimhaven OR Camelot -> charter", null),
+		new CrypticClue("Search the upstairs drawers of a house in a village where pirates are known to have a good time.", "Pirate", 348, new WorldPoint(2809, 3165, 1), "The house in the southeast corner of Brimhaven, northeast of Davon's Amulet Store. Kill any Pirate located around Brimhaven to obtain the key.", "Brimhaven house", null),
 		new CrypticClue("Search the chest in the Duke of Lumbridge's bedroom.", CLOSED_CHEST_375, new WorldPoint(3209, 3218, 1), "The Duke's room is on the first floor in Lumbridge Castle.", null, null),
 		new CrypticClue("Talk to the Doomsayer.", "Doomsayer", new WorldPoint(3232, 3228, 0), "Doomsayer can be found just north of Lumbridge Castle entrance.", null, null),
 		new CrypticClue("Search the chests upstairs in Al Kharid Palace.", CLOSED_CHEST_375, new WorldPoint(3301, 3169, 1), "The chest is located, in the northeast corner, on the first floor of the Al Kharid Palace", null, null),
@@ -389,7 +389,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 
 		if (teleport2 == null && teleport1 != null)
 		{
-			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
 					.left(teleport1)
@@ -397,13 +397,13 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		}
 		else if (teleport2 != null && teleport1 != null)
 		{
-			panelComponent.getChildren().add(TitleComponent.builder().text("Recomended teles:").build());
-			panelComponent.getChildren().add(LineComponent.builder().left("1,").build());
+			panelComponent.getChildren().add(TitleComponent.builder().text("Recommended teles:").build());
+			panelComponent.getChildren().add(LineComponent.builder().left("1.").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
 					.left(teleport1)
 					.build());
-			panelComponent.getChildren().add(LineComponent.builder().left("2,").build());
+			panelComponent.getChildren().add(LineComponent.builder().left("2.").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
 					.left(teleport2)

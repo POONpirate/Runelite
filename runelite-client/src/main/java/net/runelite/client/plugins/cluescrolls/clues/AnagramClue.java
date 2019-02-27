@@ -56,12 +56,12 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("AHA JAR", "Jaraah", new WorldPoint(3359, 3276, 0), "Duel Arena hospital", "Jewelry Box - 1 - Duel Arena"),
 		new AnagramClue("AN PAINT TONIC", "Captain Ninto", new WorldPoint(2865, 9877, 0), "Bar under White Wolf Mountain", null),
 		new AnagramClue("ARC O LINE", "Caroline", new WorldPoint(2715, 3302, 0), "North Witchaven next to the row boat", "11", "Quest Cape"),
-		new AnagramClue("ARE COL", "Oracle", new WorldPoint(3013, 3501, 0), "Ice Mountain West of Edgeville", "48", null),
+		new AnagramClue("ARE COL", "Oracle", new WorldPoint(3013, 3501, 0), "Ice Mountain West of Edgeville", "48", "Jewelry Box - B - Monastery"),
 		new AnagramClue("ARMCHAIR THE PELT", "Charlie the Tramp", new WorldPoint(3209, 3392, 0), "South entrance of Varrock", "0", "Portal Nexus - 1 - Varrock square"),
 		new AnagramClue("ARR! SO I AM A CRUST, AND?", "Ramara du Croissant", new WorldPoint(2339, 3677, 0), "Piscatoris Fishing Colony", null),
 		new AnagramClue("AT HERG", "Regath", new WorldPoint(1719, 3723, 0), "General Store, Arceuus, Zeah", "25", null),
 		new AnagramClue("A BAS", "Saba", new WorldPoint(2858, 3577, 0), "Death Plateau", "Jewelry Box - 9 - Warrior's Guild"),
-		new AnagramClue("AREA CHEF TREK", "Father Aereck", new WorldPoint(3243, 3208, 0), "Lumbridge Church", "19 or 20", null),
+		new AnagramClue("AREA CHEF TREK", "Father Aereck", new WorldPoint(3243, 3208, 0), "Lumbridge Church", "19 or 20", "Lumbridge Graveyard"),
 		new AnagramClue("BAIL TRIMS", "Brimstail", new WorldPoint(2402, 3419, 0), "West of Stronghold Slayer Cave", "Slayer Ring - 1 - Gnome Stronghold"),
 		new AnagramClue("BAKER CLIMB", "Brambickle", new WorldPoint(2783, 3861, 0), "Trollweiss mountain", null),
 		new AnagramClue("BLUE GRIM GUIDED", "Lumbridge Guide", new WorldPoint(3232, 3232, 0), "Lumbridge", null),
@@ -81,10 +81,10 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("DT RUN B", "Brundt the Chieftain", new WorldPoint(2658, 3670, 0), "Rellekka, main hall", "4", null),
 		new AnagramClue("DUO PLUG", "Dugopul", new WorldPoint(2803, 2744, 0), "Graveyard on Ape Atoll", null),
 		new AnagramClue("EEK ZERO OP", "Zoo keeper", new WorldPoint(2613, 3269, 0), "Ardougne Zoo", "40", "Ardy Cloak - Monastery"),
-		new AnagramClue("EL OW", "Lowe", new WorldPoint(3233, 3423, 0), "Varrock archery store", "Varrock Square"),
+		new AnagramClue("EL OW", "Lowe", new WorldPoint(3233, 3423, 0), "Varrock archery store", "Portal Nexus - 1 - Varrock square"),
 		new AnagramClue("ERR CURE IT", "Recruiter", new WorldPoint(2541, 3305, 0), "West Ardougne centre square", "20", "West Ardy"),
 		new AnagramClue("FORLUN", "Runolf", new WorldPoint(2512, 10256, 0), "Miscellania & Etceteria Dungeon", null),
-		new AnagramClue("GOBLIN KERN", "King Bolren", new WorldPoint(2541, 3170, 0), "Tree Gnome Village", null),
+		new AnagramClue("GOBLIN KERN", "King Bolren", new WorldPoint(2541, 3170, 0), "Tree Gnome Village", "Spirit Tree - 1 - Tree Gnome Village"),
 		new AnagramClue("GOT A BOY", "Gabooty", new WorldPoint(2790, 3066, 0), "Centre of Tai Bwo Wannai", "11", "Fairy Ring - CKR"),
 		new AnagramClue("GULAG RUN", "Uglug Nar", new WorldPoint(2442, 3051, 0), "West of Jiggig", null),
 		new AnagramClue("GOBLETS ODD TOES", "Otto Godblessed", new WorldPoint(2501, 3487, 0), "Otto's Grotto", "2", "Jewelry Box - 5 - Barbarian Outpost -> South"),
@@ -103,7 +103,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("LEAKEY", "Kaylee", new WorldPoint(2957, 3370, 0), "Rising Sun Inn in Falador", "18", "Portal Nexus - 3 - Falador"),
 		new AnagramClue("LAND DOOMD", "Odd Old Man", new WorldPoint(3359, 3506, 0), "Limestone mine northeast of Varrock", null),
 		new AnagramClue("LARK IN DOG", "King Roald", new WorldPoint(3220, 3476, 0), "Ground floor of Varrock castle", "24", "Portal Nexus - 1 - Varrock"),
-		new AnagramClue("LOW LAG", "Gallow", new WorldPoint(1805, 3566, 0), "Vinery in the Great Kourend", "12", "Xeric's Talisman - Xeric's Glade"),
+		new AnagramClue("LOW LAG", "Gallow", new WorldPoint(1805, 3566, 0), "Vinery in the Great Kourend", "12", "Xeric's Talisman - 2 - Xeric's Glade"),
 		new AnagramClue("LADDER MEMO GUV", "Guard Vemmeldo", new WorldPoint(2447, 3418, 1), "Gnome Stronghold Bank", "3", null),
 		new AnagramClue("MAL IN TAU", "Luminata", new WorldPoint(3508, 3237, 0), "Near Burgh de Rott entrance", null),
 		new AnagramClue("ME AM THE CALC", "Cam the Camel", new WorldPoint(3300, 3231, 0), "Outside Duel Arena", null),
@@ -206,7 +206,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 
 			if (teleport != null)
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder()
 						.leftColor(TITLED_CONTENT_COLOR)
 						.left(teleport)

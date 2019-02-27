@@ -74,7 +74,7 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0),null,"Fairy Ring - BIP"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0),null,"Sprit Tree - Khazard Battlefield (3) -> West"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7292, new WorldPoint(2578, 3597, 0),null,"Fairy Ring - ALP -> SE"),
-		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0),null,"Portal Nexus - 9 - Seer's Village -> North"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0),null,"Fairy Ring - CJR -> West"),
 		new MapClue(CLUE_SCROLL_HARD, new WorldPoint(3309, 3503, 0), CRATE_2620),
 		new MapClue(CLUE_SCROLL_HARD_2729, new WorldPoint(3190, 3963, 0)),
 		new MapClue(CLUE_SCROLL_HARD_3520, new WorldPoint(2615, 3078, 0)),
@@ -164,7 +164,8 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 
 		if (teleport != null)
 		{
-			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+			panelComponent.getChildren().add(LineComponent.builder().build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)
 					.left(teleport)

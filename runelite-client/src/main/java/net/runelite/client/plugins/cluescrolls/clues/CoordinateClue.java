@@ -72,6 +72,14 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private static final ItemRequirement CLUE22 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2817);
 	private static final ItemRequirement CLUE23 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2809);
 	private static final ItemRequirement CLUE24 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2823);
+	private static final ItemRequirement CLUE25 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_2813);
+	private static final ItemRequirement CLUE26 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_19774);
+	private static final ItemRequirement CLUE27 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7313);
+	private static final ItemRequirement CLUE28 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12053);
+	private static final ItemRequirement CLUE29 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12051);
+	private static final ItemRequirement CLUE30 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7307);
+	private static final ItemRequirement CLUE31 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3586);
+	private static final ItemRequirement CLUE32 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12033);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
@@ -86,141 +94,199 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 		{
 			if (CLUE1.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fenkenstrain's Castle").build());
 			}
 			if (CLUE2.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - BKP").build());
 			}
 			if (CLUE3.fulfilledBy(plugin.getInventoryItems()) || CLUE4.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Slayer Ring - 1 - Gnome Stronghold -> West ").build());
 			}
 			if (CLUE5.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - DKP").build());
 			}
 			if (CLUE6.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Jewelry Box - B - Monastery").build());
 			}
 			if (CLUE7.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - BIP").build());
 			}
 			if (CLUE8.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Jewelry Box - J - Miscellania").build());
 			}
 			if (CLUE9.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Jewelry Box - P - Dranor Village").build());
 			}
 			if (CLUE10.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Portal Nexus - 3 - Falador").build());
 			}
 			if (CLUE11.fulfilledBy(plugin.getInventoryItems()))
-		{
-			panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
-			panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
-					.left("Fairy Ring - BLP - Tzhaar Area -> Exit N -> N past Elvarg").build());
-		}
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - BLP - Tzhaar Area -> Exit N -> N past Elvarg").build());
+			}
 			if (CLUE12.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Necklace of Passage - 2 - The Outpost").build());
 			}
-			if (CLUE13.fulfilledBy(plugin.getInventoryItems()))
+			if (CLUE13.fulfilledBy(plugin.getInventoryItems()) || CLUE28.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Slayer Ring - 2 - Morytania Slayer Tower").build());
 			}
 			if (CLUE14.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - CLS").build());
 			}
 			if (CLUE15.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Jewelry Box - O - Karamja").build());
 			}
 			if (CLUE16.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Slayer Ring - 3 - Relekka slayer cave").build());
 			}
 			if (CLUE17.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Brimhaven house").build());
 			}
 			if (CLUE18.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring -  BIQ -> Magic Carpet - Uzer").build());
 			}
 			if (CLUE19.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Recomended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Royal seed pod").build());
 			}
             if (CLUE20.fulfilledBy(plugin.getInventoryItems()))
             {
-                panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+                panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
                 panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
-                        .left("Royal seed pod").build());
+                        .left("Fairy Ring - AKQ -> SE").build());
             }
 			if (CLUE21.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - AIQ").build());
 			}
 			if (CLUE22.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Fairy Ring - CKR").build());
 			}
 			if (CLUE23.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Spirit tree - 1 - Tree Gnome Village").build());
 			}
-			if (CLUE24.fulfilledBy(plugin.getInventoryItems()))
+			if (CLUE24.fulfilledBy(plugin.getInventoryItems()) || CLUE27.fulfilledBy(plugin.getInventoryItems()))
 			{
-				panelComponent.getChildren().add(LineComponent.builder().left("Fairy Ring - AKQ -> SE").build());
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Lumbridge Graveyard").build());
+			}
+			if (CLUE25.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Ardy cloak - Monastery").build());
+			}
+			if (CLUE26.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - DJR").build());
+			}
+			if (CLUE29.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Portal Nexus - D - Senntisten").build());
+			}
+			if (CLUE30.fulfilledBy(plugin.getInventoryItems()) || CLUE32.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Fairy Ring - AKS").build());
+			}
+			if (CLUE31.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - 4 - Burthorpe").build());
 			}
 
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))
