@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, Adam <Adam@sigterm.info>
+ * Copyright (c) 2019, Jordan Atwood <nightfirecat@protonmail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -22,19 +22,24 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.api.events;
+package net.runelite.client.plugins.groundmarkers;
 
-import lombok.Data;
+import java.awt.Color;
+import lombok.Value;
+import net.runelite.api.coords.WorldPoint;
 
 /**
- * An event where a new RuneLite account session has been opened
- * with the server.
- * <p>
- * Note: This event is not to be confused with a RuneScape session,
- * it has nothing to do with whether an account is being logged in.
+ * Used to denote marked tiles and their colors.
+ * Note: This is not used for serialization of ground markers; see {@link GroundMarkerPoint}
  */
-@Data
-public class SessionOpen
+@Value
+class ColorTileMarker
 {
+	private WorldPoint worldPoint;
+	private Color color;
 
+	boolean sameTile(final ColorTileMarker other)
+	{
+		return worldPoint.equals(other.getWorldPoint());
+	}
 }
