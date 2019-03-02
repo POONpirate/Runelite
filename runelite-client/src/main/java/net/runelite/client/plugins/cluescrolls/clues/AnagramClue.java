@@ -78,7 +78,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("DR HITMAN", "Mandrith", new WorldPoint(3182, 3946, 0), "Wilderness Resource Area", "28, Light box or Puzzle box", null),
 		new AnagramClue("DR WARDEN FUNK", "Drunken Dwarf", new WorldPoint(2913, 10221, 0), "East Side of Keldagrim", "Puzzle box", null),
 		new AnagramClue("DRAGONS LAMENT", "Strange Old Man", new WorldPoint(3564, 3288, 0), "Barrows", "40", null),
-		new AnagramClue("DT RUN B", "Brundt the Chieftain", new WorldPoint(2658, 3670, 0), "Rellekka, main hall", "4", null),
+		new AnagramClue("DT RUN B", "Brundt the Chieftain", new WorldPoint(2658, 3670, 0), "Rellekka, main hall", "4", "Portal Nexus - 6 - Lunar Isle -> Banker"),
 		new AnagramClue("DUO PLUG", "Dugopul", new WorldPoint(2803, 2744, 0), "Graveyard on Ape Atoll", null),
 		new AnagramClue("EEK ZERO OP", "Zoo keeper", new WorldPoint(2613, 3269, 0), "Ardougne Zoo", "40", "Ardy Cloak - Monastery"),
 		new AnagramClue("EL OW", "Lowe", new WorldPoint(3233, 3423, 0), "Varrock archery store", "Portal Nexus - 1 - Varrock square"),
@@ -91,7 +91,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("HALT US", "Luthas", new WorldPoint(2938, 3152, 0), "Banana plantation, Karamja", "33 (or none)", "Jewelry Box - O - Karmaja"),
 		new AnagramClue("HE DO POSE. IT IS CULTRRL, MK?", "Riki the sculptor's model", new WorldPoint(2904, 10206, 0), "East Keldagrim, south of kebab seller.", null),
 		new AnagramClue("HEORIC", "Eohric", new WorldPoint(2900, 3565, 0), "Top floor of Burthorpe Castle", "36", "Jewelry Box - 4 - Burthorpe"),
-		new AnagramClue("HIS PHOR", "Horphis", new WorldPoint(1639, 3812, 0), "Arceuus Library, Zeah", "1", null),
+		new AnagramClue("HIS PHOR", "Horphis", new WorldPoint(1639, 3812, 0), "Arceuus Library, Zeah", "1", "Fairy Ring - CIS"),
 		new AnagramClue("I AM SIR", "Marisi", new WorldPoint(1813, 3488, 0), "Allotment patch, South coast Zeah", "5", "Xeric's Talisman - 2 - Xeric's Glade"),
 		new AnagramClue("ICY FE", "Fycie", new WorldPoint(2630, 2997, 0), "East Feldip Hills", null),
 		new AnagramClue("I DOOM ICON INN", "Dominic Onion", new WorldPoint(2609, 3116, 0), "Nightmare Zone", "9,500", "Portal Nexus - C - Yanille"),
@@ -120,7 +120,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("OR ZINC FUMES WARD", "Wizard Frumscone", new WorldPoint(2594, 3086, 0), "Downstairs in the Wizards' Guild", null),
 		new AnagramClue("OUR OWN NEEDS", "Nurse Wooned", new WorldPoint(1575, 3590, 0), "Shayzien House Infirmary", "19", null),
 		new AnagramClue("PACINNG A TAIE", "Captain Ginea", new WorldPoint(1561, 3602, 0), "Building east of Shayzien combat ring", "113", "Xeric's Talisman - 1 - Xeric's Look-out"),
-		new AnagramClue("PEAK REFLEX", "Flax keeper", new WorldPoint(2744, 3444, 0), "Flax field south of Seers Village", "676", null),
+		new AnagramClue("PEAK REFLEX", "Flax keeper", new WorldPoint(2744, 3444, 0), "Flax field south of Seers Village", "676", "Portal Nexus - 9 - Seers' Village"),
 		new AnagramClue("PEATY PERT", "Party Pete", new WorldPoint(3047, 3376, 0), "Falador Party Room", "Jewelry Box - L - Falador Park"),
 		new AnagramClue("PROFS LOSE WRONG PIE", "Professor Onglewip", new WorldPoint(3113, 3162, 0), "Ground floor of Wizards Tower", null),
 		new AnagramClue("QUIT HORRIBLE TYRANT", "Brother Tranquility", new WorldPoint(3681, 2963, 0), "Mos Le'Harmless or Harmony Island", "7", null),
@@ -128,7 +128,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("R AK MI", "Karim", new WorldPoint(3273, 3181, 0), "Al Kharid Kebab shop", "5", "Jewelry Box - Q - Al Kharid"),
 		new AnagramClue("RAT MAT WITHIN", "Martin Thwait", new WorldPoint(2906, 3537, 0), "Rogues' Den", "2", null),
 		new AnagramClue("RED ART TANS", "Trader Stan", new WorldPoint(3041, 3193, 0), "Port Sarim Charter ship", null),
-		new AnagramClue("RATAI", "Taria", new WorldPoint(2940, 3223, 0), "Rimmington bush patch", "7", null),
+		new AnagramClue("RATAI", "Taria", new WorldPoint(2940, 3223, 0), "Rimmington bush patch", "7", "Jewelry Box - F - Crafting Guild "),
 		new AnagramClue("R SLICER", "Clerris", new WorldPoint(1761, 3850, 0), "Arceuus mine, Zeah", "738", "Fairy Ring - CIS"),
 		new AnagramClue("SAND NUT", "Dunstan", new WorldPoint(2919, 3574, 0), "Anvil in north east Burthorpe", "8", "Jewelry Box - 4 - Burthorpe"),
 		new AnagramClue("SEQUIN DIRGE", "Queen Sigrid", new WorldPoint(2612, 3867, 0), "Throne room of Etceteria Castle.", null),
@@ -139,7 +139,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("TAMED ROCKS", "Dockmaster", new WorldPoint(1822, 3739, 0), "Piscarilius House, NE of General store", "5", null),
 		new AnagramClue("TEN WIGS ON", "Wingstone", new WorldPoint(3389, 2877, 0), "Between Nardah & Agility Pyramid", null),
 		new AnagramClue("THEM CAL CAME", "Cam the Camel", new WorldPoint(3300, 3231, 0), "Just outside of the Duel Arena", null),
-		new AnagramClue("THICKNO", "Hickton", new WorldPoint(2822, 3442, 0), "Catherby fletching shop", "2", null),
+		new AnagramClue("THICKNO", "Hickton", new WorldPoint(2822, 3442, 0), "Catherby fletching shop", "2", "Portal Nexus - 8 - Camelot"),
 		new AnagramClue("TWENTY CURE IRON", "New recruit Tony", new WorldPoint(1498, 3544, 0), "Shayzien House's Graveyard", null),
 		new AnagramClue("UNLEASH NIGHT MIST", "Sigli the Huntsman", new WorldPoint(2660, 3654, 0), "Rellekka", "302", null),
 		new AnagramClue("VESTE", "Steve", new WorldPoint(2432, 3423, 0), "Upstairs Wyvern Area or Stronghold Slayer Cave", "2", "Slayer Ring - 1 - Stronghold slayer cave"),
@@ -183,17 +183,20 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
 	{
 		panelComponent.getChildren().add(TitleComponent.builder().text("Anagram Clue").build());
-		panelComponent.getChildren().add(LineComponent.builder().left("NPC:").build());
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left(getNpc())
-			.leftColor(TITLED_CONTENT_COLOR)
-			.build());
 
-		panelComponent.getChildren().add(LineComponent.builder().left("Area:").build());
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left(getArea())
-			.leftColor(TITLED_CONTENT_COLOR)
-			.build());
+		if (teleport == null) {
+			panelComponent.getChildren().add(LineComponent.builder().left("NPC:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+					.left(getNpc())
+					.leftColor(TITLED_CONTENT_COLOR)
+					.build());
+
+			panelComponent.getChildren().add(LineComponent.builder().left("Area:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+					.left(getArea())
+					.leftColor(TITLED_CONTENT_COLOR)
+					.build());
+		}
 
 		if (getAnswer() != null)
 		{

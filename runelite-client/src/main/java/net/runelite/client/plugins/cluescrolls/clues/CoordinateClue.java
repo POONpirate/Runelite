@@ -80,6 +80,8 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private static final ItemRequirement CLUE30 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_7307);
 	private static final ItemRequirement CLUE31 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3586);
 	private static final ItemRequirement CLUE32 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12033);
+	private static final ItemRequirement CLUE33 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3590);
+	private static final ItemRequirement CLUE34 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12039);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
@@ -197,7 +199,7 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Slayer Ring - 3 - Relekka slayer cave").build());
 			}
-			if (CLUE17.fulfilledBy(plugin.getInventoryItems()))
+			if (CLUE17.fulfilledBy(plugin.getInventoryItems()) || CLUE33.fulfilledBy(plugin.getInventoryItems()))
 			{
 				panelComponent.getChildren().add(LineComponent.builder().build());
 				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
@@ -287,6 +289,13 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Jewelry Box - 4 - Burthorpe").build());
+			}
+			if (CLUE34.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Portal Nexus - 6 - Lunar Isle -> Rellekka").build());
 			}
 
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))

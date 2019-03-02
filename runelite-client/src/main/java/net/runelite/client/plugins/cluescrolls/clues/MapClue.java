@@ -72,7 +72,7 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 		new MapClue(CLUE_SCROLL_MEDIUM_3602, new WorldPoint(2924, 3210, 0),null,"Jewelry Box - F - Crafting Guild -> South"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7286, new WorldPoint(2536, 3865, 0),null,"Jewelry Box - J - Miscellania"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7288, new WorldPoint(3434, 3265, 0),null,"Fairy Ring - BIP"),
-		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0),null,"Sprit Tree - Khazard Battlefield (3) -> West"),
+		new MapClue(CLUE_SCROLL_MEDIUM_7290, new WorldPoint(2454, 3230, 0),null,"Royal Seed Pod -> Spirit Tree - Khazard Battlefield (3) -> West"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7292, new WorldPoint(2578, 3597, 0),null,"Fairy Ring - ALP -> SE"),
 		new MapClue(CLUE_SCROLL_MEDIUM_7294, new WorldPoint(2666, 3562, 0),null,"Fairy Ring - CJR -> West"),
 		new MapClue(CLUE_SCROLL_HARD, new WorldPoint(3309, 3503, 0), CRATE_2620),
@@ -128,11 +128,14 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 	{
 		panelComponent.getChildren().add(TitleComponent.builder().text("Map Clue").build());
 
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left("Click the clue scroll along the edge of your world map to see your destination.")
-			.build());
+		if (teleport == null)
+		{
+			panelComponent.getChildren().add(LineComponent.builder()
+					.left("Click the clue scroll along the edge of your world map to see your destination.")
+					.build());
+		}
 
-		if (objectId != -1)
+		if (objectId != -1 && teleport == null)
 		{
 			ObjectComposition objectToClick = plugin.getClient().getObjectDefinition(getObjectId());
 
@@ -147,7 +150,7 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 				.left("Travel to the destination and click the " + objectName + ".")
 				.build());
 		}
-		else
+		else if (teleport == null)
 		{
 			panelComponent.getChildren().add(LineComponent.builder()
 				.left("Travel to the destination and dig on the marked tile.")

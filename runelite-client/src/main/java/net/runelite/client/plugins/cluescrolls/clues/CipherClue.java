@@ -44,7 +44,7 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 {
 	private static final Set<CipherClue> CLUES = ImmutableSet.of(
 		new CipherClue("BMJ UIF LFCBC TFMMFS", "Ali the Kebab seller", new WorldPoint(3354, 2974, 0), "Pollnivneach", "399", "House redirect Pollnivneach OR Fairy Ring - BIQ -> Carpet ride"), //Kelton Desert Amulet - Nardah
-		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", "Fairy Ring - CKS"),
+		new CipherClue("GUHCHO", "Drezel", new WorldPoint(3440, 9895, 0), "Paterdomus", "7", "Fairy Ring - CKS -> NW -> Trapdoor"),
 		new CipherClue("ZCZL", "Adam", new WorldPoint(3227, 3227, 0), "Outside Lumbridge castle", "666", "Lumbridge"),
 		new CipherClue("ZHLUG ROG PDQ", "Weird Old Man", new WorldPoint(3224, 3112, 0), "Kalphite Lair entrance. Fairy ring BIQ", "150", null),
 		new CipherClue("ECRVCKP MJCNGF", "Captain Khaled", new WorldPoint(1845, 3754, 0), "Large eastern building in Piscarilius House", "5", "Kahredst's memoirs - 2 - Piscarilius"),
@@ -79,17 +79,20 @@ public class CipherClue extends ClueScroll implements TextClueScroll, NpcClueScr
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
 	{
 		panelComponent.getChildren().add(TitleComponent.builder().text("Cipher Clue").build());
-		panelComponent.getChildren().add(LineComponent.builder().left("NPC:").build());
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left(getNpc())
-			.leftColor(TITLED_CONTENT_COLOR)
-			.build());
 
-		panelComponent.getChildren().add(LineComponent.builder().left("Area:").build());
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left(getArea())
-			.leftColor(TITLED_CONTENT_COLOR)
-			.build());
+		if (teleport == null) {
+			panelComponent.getChildren().add(LineComponent.builder().left("NPC:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+				.left(getNpc())
+				.leftColor(TITLED_CONTENT_COLOR)
+				.build());
+
+			panelComponent.getChildren().add(LineComponent.builder().left("Area:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+				.left(getArea())
+				.leftColor(TITLED_CONTENT_COLOR)
+				.build());
+	}
 
 		if (getAnswer() != null)
 		{

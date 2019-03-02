@@ -113,7 +113,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("I have many arms but legs, I have just one. I have little family but my seed you can grow on, I am not dead, yet I am but a spirit, and my power, on your quests, you will earn the right to free it.", NULL_1293, new WorldPoint(2544, 3170, 0), "Spirit Tree in Tree Gnome Village. Answer: 13112221", null, null),
 		new CrypticClue("I am the one who watches the giants. The giants in turn watch me. I watch with two while they watch with one. Come seek where I may be.", "Kamfreena", new WorldPoint(2845, 3539, 0), "Speak to Kamfreena on the top floor of the Warriors' Guild.", null, null),
 		new CrypticClue("In a town where wizards are known to gather, search upstairs in a large house to the north.", "Man", 375, new WorldPoint(2593, 3108, 1), "Search the chest upstairs in the house north of Yanille Wizard's Guild. Kill a man for the key.", "Portal Nexus - C - Yanille", null),
-		new CrypticClue("Probably filled with wizards socks.", "Wizard", DRAWERS_350, new WorldPoint(3116, 9562, 0), "Search the drawers in the basement of the Wizard's Tower south of Draynor Village. Kill one of the Wizards for the key.", "Fairy Ring - DIS", null),
+		new CrypticClue("Probably filled with wizards socks.", "Wizard", DRAWERS_350, new WorldPoint(3116, 9562, 0), "Search the drawers in the basement of the Wizard's Tower south of Draynor Village. Kill one of the Wizards for the key.", "Fairy Ring - DIS -> Downstairs", null),
 		new CrypticClue("Even the seers say this clue goes right over their heads.", CRATE_26635, new WorldPoint(2707, 3488, 2), "Search the crate on the Seers Agility Course in Seers Village", null, null),
 		new CrypticClue("Speak to a Wyse man.", "Wyson the gardener", new WorldPoint(3026, 3378, 0), "Talk to Wyson the gardener at Falador Park.", null, null),
 		new CrypticClue("You'll need to look for a town with a central fountain. Look for a locked chest in the town's chapel.", "Monk" , CLOSED_CHEST_5108, new WorldPoint(3256, 3487, 0), "Search the chest by the stairs in the Varrock church. Kill a Monk in Ardougne Monastery to obtain the key.", "Ardy Cape -> Monastery", "Portal Nexus - 1 - Varrock Square -> NE"),
@@ -127,7 +127,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("In a village made of bamboo, look for some crates under one of the houses.", CRATE_356, new WorldPoint(2800, 3074, 0), "Search the crate by the house at the northern point of the broken jungle fence in Tai Bwo Wannai.", "Fairy Ring - CKR", null),
 		new CrypticClue("This crate is mine, all mine, even if it is in the middle of the desert.", CRATE_18889, new WorldPoint(3289, 3022, 0), "Center of desert Mining Camp. Search the crates. Requires the metal key from Tourist Trap to enter.", "Fairy Ring - BIQ", null),
 		new CrypticClue("Dig where 4 siblings and I all live with our evil overlord.", new WorldPoint(3195, 3357, 0), "Dig in the chicken pen inside the Champions' Guild", null, null),
-		new CrypticClue("In a town where the guards are armed with maces, search the upstairs rooms of the Public House.", "Guard dog", 348, new WorldPoint(2574, 3326, 1), "Search the drawers upstairs in the pub north of Ardougne Castle. Kill a Guard dog at Handelmort Mansion to obtain the key.", "Portal Nexus - A - Ardy", null),
+		new CrypticClue("In a town where the guards are armed with maces, search the upstairs rooms of the Public House.", "Guard dog", 348, new WorldPoint(2574, 3326, 1), "Search the drawers upstairs in the pub north of Ardougne Castle. Kill a Guard dog at Handelmort Mansion to obtain the key.", "Portal Nexus - A - Ardy -> Guard Dog (Key) -> Pub", null),
 		new CrypticClue("Four blades I have, yet draw no blood; Still I turn my prey to powder. If you are brave, come search my roof; It is there my blades are louder.", CRATE_12963, new WorldPoint(3166, 3309, 2), "Lumbridge windmill, search the crates on the top floor.", null, null),
 		new CrypticClue("Search through some drawers in the upstairs of a house in Rimmington.", DRAWERS_352, new WorldPoint(2970, 3214, 1), "On the first floor of the house north of Hetty the Witch's house in Rimmington.", null, null),
 		new CrypticClue("Probably filled with books on magic.", BOOKCASE_380, new WorldPoint(3096, 9572, 0), "Search the bookcase in the basement of Wizard's Tower. Fairy ring DIS", null, null),
@@ -145,7 +145,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("Search the crates in a house in Yanille that has a piano.", CRATE_357, new WorldPoint(2598, 3105, 0), "The house is located northwest of the bank.", null, null),
 		new CrypticClue("Speak to the staff of Sinclair mansion.", "Louisa", new WorldPoint(2736, 3578, 0), "Speak to Louisa, on the ground floor, found at the Sinclair Mansion. Fairy ring CJR", null, null),
 		new CrypticClue("I am a token of the greatest love. I have no beginning or end. My eye is red, I can fit like a glove. Go to the place where it's money they lend, And dig by the gate to be my friend.", new WorldPoint(3191, 9825, 0), "Dig by the gate in the basement of the West Varrock bank.", null, null),
-		new CrypticClue("Speak to Kangai Mau.", "Kangai Mau", new WorldPoint(2791, 3183, 0), "Kangai Mau is found in the Shrimp and Parrot in Brimhaven.", null, null),
+		new CrypticClue("Speak to Kangai Mau.", "Kangai Mau", new WorldPoint(2791, 3183, 0), "Kangai Mau is found in the Shrimp and Parrot in Brimhaven.", "Brimhaven House", null),
 		new CrypticClue("Speak to Hajedy.", "Hajedy", new WorldPoint(2779, 3211, 0), "Hajedy is found by the cart, located just south of the Brimhaven docks.", "Brimhaven house", null),
 		new CrypticClue("Must be full of railings.", BOXES_6176, new WorldPoint(2576, 3464, 0), "Search the boxes around the hut where the broken Dwarf Cannon is, close to the start of the Dwarf Cannon quest.", null, null),
 		new CrypticClue("I wonder how many bronze swords he has handed out.", "Vannaka", new WorldPoint(3164, 9913, 0), "Talk to Vannaka. He can be found in Edgeville Dungeon.", null, null),
@@ -202,7 +202,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new CrypticClue("Search the drawers on the first floor of a building overlooking Ardougne's Market.", DRAWERS_352, new WorldPoint(2657, 3322, 1), "Climb the ladder in the house north of the market.", null, null),
 		new CrypticClue("'A bag belt only?', he asked his balding brothers.", "Abbot Langley", new WorldPoint(3058, 3487, 0), "Talk-to Abbot Langley in Monastery west of Edgeville", null, null),
 		new CrypticClue("Search the drawers upstairs in Falador's shield shop.", DRAWERS, new WorldPoint(2971, 3386, 1), "Cassie's Shield Shop at the northern Falador entrance.", null, null),
-		new CrypticClue("Go to this building to be illuminated, and check the drawers while you are there.", "Market Guard", DRAWERS_350 , new WorldPoint(2512, 3641, 1), "Search the drawers in the first floor of the Lighthouse. Kill a Rellekka marketplace guard to obtain the key.", "Portal Nexus - 6 -Lunar Isle -> Rellekka", "Fairy Ring - ALP"),
+		new CrypticClue("Go to this building to be illuminated, and check the drawers while you are there.", "Market Guard", DRAWERS_350 , new WorldPoint(2512, 3641, 1), "Search the drawers in the first floor of the Lighthouse. Kill a Rellekka marketplace guard to obtain the key.", "Portal Nexus - 6 - Lunar Isle -> Rellekka", "Fairy Ring - ALP"),
 		new CrypticClue("Dig near some giant mushrooms, behind the Grand Tree.", new WorldPoint(2458, 3504, 0), "Dig near the red mushrooms northwest of the Grand Tree.", null, null),
 		new CrypticClue("Pentagrams and demons, burnt bones and remains, I wonder what the blood contains.", new WorldPoint(3297, 3890, 0), "Dig under the blood rune spawn next the the Demonic Ruins.", null, null),
 		new CrypticClue("Search the drawers above Varrock's shops.", DRAWERS_7194, new WorldPoint(3206, 3419, 1), "Located upstairs in Thessalia's Fine Clothes shop in Varrock.", null, null),
@@ -344,7 +344,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 	{
 		panelComponent.getChildren().add(TitleComponent.builder().text("Cryptic Clue").build());
 
-		if (getNpc() != null)
+		if (getNpc() != null && teleport1 == null)
 		{
 			panelComponent.getChildren().add(LineComponent.builder().left("NPC:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
@@ -353,7 +353,7 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 				.build());
 		}
 
-		if (objectId != -1)
+		if (objectId != -1 && teleport1 == null)
 		{
 			ObjectComposition object = plugin.getClient().getObjectDefinition(objectId);
 
@@ -372,11 +372,13 @@ public class CrypticClue extends ClueScroll implements TextClueScroll, NpcClueSc
 			}
 		}
 
-		panelComponent.getChildren().add(LineComponent.builder().left("Solution:").build());
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left(getSolution())
-			.leftColor(TITLED_CONTENT_COLOR)
-			.build());
+		if (teleport1 == null) {
+			panelComponent.getChildren().add(LineComponent.builder().left("Solution:").build());
+			panelComponent.getChildren().add(LineComponent.builder()
+					.left(getSolution())
+					.leftColor(TITLED_CONTENT_COLOR)
+					.build());
+		}
 
 		if (text == "Speak to a referee.")
 		{
