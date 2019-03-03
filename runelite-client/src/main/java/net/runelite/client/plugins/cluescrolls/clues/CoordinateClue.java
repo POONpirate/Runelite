@@ -82,15 +82,17 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 	private static final ItemRequirement CLUE32 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12033);
 	private static final ItemRequirement CLUE33 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_3590);
 	private static final ItemRequirement CLUE34 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12039);
+	private static final ItemRequirement CLUE35 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12049);
+	private static final ItemRequirement CLUE36 = new SingleItemRequirement(ItemID.CLUE_SCROLL_MEDIUM_12043);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
 	{
 		panelComponent.getChildren().add(TitleComponent.builder().text("Coordinate Clue").build());
 
-		panelComponent.getChildren().add(LineComponent.builder()
-			.left("Click the clue scroll along the edge of your world map to see where you should dig.")
-			.build());
+		//panelComponent.getChildren().add(LineComponent.builder()
+		//	.left("Click the clue scroll along the edge of your world map to see where you should dig.")
+		//	.build());
 
 		if (plugin.getInventoryItems() != null)
 		{
@@ -296,6 +298,20 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
 						.left("Portal Nexus - 6 - Lunar Isle -> Rellekka").build());
+			}
+			if (CLUE35.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - D - Fishing Guild -> North").build());
+			}
+			if (CLUE35.fulfilledBy(plugin.getInventoryItems()))
+			{
+				panelComponent.getChildren().add(LineComponent.builder().build());
+				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
+				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
+						.left("Jewelry Box - P - Dranor Village -> North").build());
 			}
 
 			if (!HAS_SPADE.fulfilledBy(plugin.getInventoryItems()))

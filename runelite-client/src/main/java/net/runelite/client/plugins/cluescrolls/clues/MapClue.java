@@ -167,7 +167,6 @@ public class MapClue extends ClueScroll implements ObjectClueScroll
 
 		if (teleport != null)
 		{
-			panelComponent.getChildren().add(LineComponent.builder().build());
 			panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 			panelComponent.getChildren().add(LineComponent.builder()
 					.leftColor(TITLED_CONTENT_COLOR)

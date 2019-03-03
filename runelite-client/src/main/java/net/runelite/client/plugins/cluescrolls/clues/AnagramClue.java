@@ -114,7 +114,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("MUS KIL READER", "Radimus Erkle", new WorldPoint(2726, 3368, 0), "Legends' Guild", null),
 		new AnagramClue("MY MANGLE LAL", "Lammy Langle", new WorldPoint(1688, 3540, 0), "Hosidius House spirit tree patch", null),
 		new AnagramClue("NO OWNER", "Oronwen", new WorldPoint(1162, 3178, 0), "Lletya Seamstress shop in Lletya", "20", null),
-		new AnagramClue("NOD MED", "Edmond", new WorldPoint(2566, 3332, 0), "Behind the most NW house in East Ardougne", "3", null),
+		new AnagramClue("NOD MED", "Edmond", new WorldPoint(2566, 3332, 0), "Behind the most NW house in East Ardougne", "3", "Necklace of Passage - 2 - The Outpost -> East"),
 		new AnagramClue("O BIRDZ A ZANY EN PC", "Cap'n Izzy No-Beard", new WorldPoint(2807, 3191, 0), "Brimhaven Agility Arena", "33", null),
 		new AnagramClue("OK CO", "Cook", new WorldPoint(3207, 3214, 0), "Ground floor of Lumbridge Castle", "9", "Portal Nexus - 4 - Lumbridge"),
 		new AnagramClue("OR ZINC FUMES WARD", "Wizard Frumscone", new WorldPoint(2594, 3086, 0), "Downstairs in the Wizards' Guild", null),
