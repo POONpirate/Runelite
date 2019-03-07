@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, Adam <Adam@sigterm.info>
+ * Copyright (c) 2019, Adam <Adam@sigterm.info>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -22,8 +22,15 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.rs.api;
+package net.runelite.client.plugins.clanchat;
 
-public interface RSFriendContainer extends RSNameableContainer<RSFriend>
+import lombok.Value;
+import net.runelite.api.MessageNode;
+
+@Value
+class ClanJoinMessage
 {
+	private final MessageNode messageNode;
+	private final int getMessageId;
+	private final int tick;
 }
