@@ -50,7 +50,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 	private static final Set<AnagramClue> CLUES = ImmutableSet.of(
 		new AnagramClue("A BAKER", "Baraek", new WorldPoint(3217, 3434, 0), "Varrock square", "5", "Portal Nexus - 1 - Varrock square"),
 		new AnagramClue("A BASIC ANTI POT", "Captain Tobias", new WorldPoint(3026, 3216, 0), "Port Sarim", "6", "Jewelry Box - P - Dranor Village -> West"),
-		new AnagramClue("A HEART", "Aretha", new WorldPoint(1814, 3851, 0), "Soul altar", "2", "Fairy Ring - CIS"),
+		new AnagramClue("A HEART", "Aretha", new WorldPoint(1814, 3851, 0), "Soul altar", "2", "Fairy Ring - CIS -> NE -> North path past dark altar"),
 		new AnagramClue("A ZEN SHE", "Zenesha", new WorldPoint(2652, 3295, 0), "Platebody Southern Ardougne centre square", null),
 		new AnagramClue("ACE MATCH ELM", "Cam The Camel", new WorldPoint(3300, 3231, 0), "North of the glider in Al Kharid", null),
 		new AnagramClue("AHA JAR", "Jaraah", new WorldPoint(3359, 3276, 0), "Duel Arena hospital", "Jewelry Box - 1 - Duel Arena"),
@@ -93,7 +93,7 @@ public class AnagramClue extends ClueScroll implements TextClueScroll, NpcClueSc
 		new AnagramClue("HEORIC", "Eohric", new WorldPoint(2900, 3565, 0), "Top floor of Burthorpe Castle", "36", "Jewelry Box - 4 - Burthorpe"),
 		new AnagramClue("HIS PHOR", "Horphis", new WorldPoint(1639, 3812, 0), "Arceuus Library, Zeah", "1", "Fairy Ring - CIS"),
 		new AnagramClue("I AM SIR", "Marisi", new WorldPoint(1813, 3488, 0), "Allotment patch, South coast Zeah", "5", "Xeric's Talisman - 2 - Xeric's Glade"),
-		new AnagramClue("ICY FE", "Fycie", new WorldPoint(2630, 2997, 0), "East Feldip Hills", null),
+		new AnagramClue("ICY FE", "Fycie", new WorldPoint(2630, 2997, 0), "East Feldip Hills", "Fairy Ring - AKS"),
 		new AnagramClue("I DOOM ICON INN", "Dominic Onion", new WorldPoint(2609, 3116, 0), "Nightmare Zone", "9,500", "Portal Nexus - C - Yanille"),
 		new AnagramClue("I EAT ITS CHART HINTS DO U", "Shiratti the Custodian", new WorldPoint(3427, 2927, 0), "North of fountain, Nardah", null),
 		new AnagramClue("I EVEN", "Nieve", new WorldPoint(2432, 3422, 0), "The slayer master in Gnome Stronghold", "2", null),
