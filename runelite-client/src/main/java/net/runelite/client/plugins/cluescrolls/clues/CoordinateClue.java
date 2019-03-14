@@ -275,7 +275,7 @@ public class CoordinateClue extends ClueScroll implements TextClueScroll, Locati
 			{
 				panelComponent.getChildren().add(LineComponent.builder().left("Recommended tele:").build());
 				panelComponent.getChildren().add(LineComponent.builder().leftColor(TITLED_CONTENT_COLOR)
-						.left("Jewelry Box - D - Fishing Guild -> North").build());
+						.left("Jewelry Box - D - Fishing Guild -> NW").build());
 			}
 			if (CLUE36.fulfilledBy(plugin.getInventoryItems()))
 			{
